@@ -2776,3 +2776,32 @@ const facultyProfiles = [
   initPlacementHighlights();
   initCountUpNumbers();
 })();
+
+
+
+
+
+
+
+  // Show the floating CTA between the site header and final admissions section.
+  function initStickyAdmissionsCTA() {
+    const cta = document.querySelector('.sticky-admissions-cta');
+    const banner = document.querySelector('#admissions-banner');
+    const header = document.querySelector('.site-header');
+    if (!cta || !banner) return;
+    let frame;
+    const update = () => {
+      frame = undefined;
+      const headerVisible = header && header.getBoundingClientRect().bottom > 0;
+      const hide = headerVisible || banner.getBoundingClientRect().top < window.innerHeight;
+      cta.hidden = hide;
+      document.body.classList.toggle('sticky-cta-hidden', hide);
+    };
+    const schedule = () => {
+      if (frame === undefined) frame = requestAnimationFrame(update);
+    };
+    window.addEventListener('scroll', schedule, {passive: true});
+    window.addEventListener('resize', schedule);
+    window.addEventListener('load', schedule);
+    update();
+  }
