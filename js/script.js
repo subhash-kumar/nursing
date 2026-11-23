@@ -24,7 +24,7 @@ const facultyProfiles = [
     "name": "Prof. (Dr.) R. K. Saini",
     "role": "Principal",
     "qualification": "M.Sc. Nursing MSN, D. Sc.",
-    "specialisation": "Family Law",
+    "specialisation": "",
     "experience": "22 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "6" },
@@ -44,7 +44,7 @@ const facultyProfiles = [
     "name": "Prof. (Dr.) Maharaj Singh",
     "role": "Vice Principal",
     "qualification": "M.Sc. Nursing, Ph.D. Nursing/CHN",
-    "specialisation": "Orthopedics",
+    "specialisation": "",
     "experience": "20 Years",
     "metrics": [
       { "label": "Publications (Present University)", "value": "54" },
@@ -64,7 +64,7 @@ const facultyProfiles = [
     "name": "Dr. Anil kumar Malviya",
     "role": "Professor",
     "qualification": "M.Sc. Nursing, Ph.D. Nursing/MHN",
-    "specialisation": "Cardio-Pulmonary Sciences",
+    "specialisation": "",
     "experience": "20.6 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "3" },
@@ -84,7 +84,7 @@ const facultyProfiles = [
     "name": "Dr. Rahul Sharma",
     "role": "Associate Professor",
     "qualification": "M.Sc. Nursing, Ph.D. Nursing/MHN",
-    "specialisation": "Neurology",
+    "specialisation": "",
     "experience": "15 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "1" },
@@ -104,7 +104,7 @@ const facultyProfiles = [
     "name": "Dr. Naresh K. Soni",
     "role": "Associate Professor",
     "qualification": "M.Sc. Nursing/ PHD",
-    "specialisation": "Orthopedics",
+    "specialisation": "",
     "experience": "13 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "" },
@@ -124,7 +124,7 @@ const facultyProfiles = [
     "name": "Dr. Naveen Nargar",
     "role": "Associate Professor",
     "qualification": "M.Sc. Nursing, Ph.D. Nursing/MSN",
-    "specialisation": "Neurology",
+    "specialisation": "",
     "experience": "14 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "5" },
@@ -144,7 +144,7 @@ const facultyProfiles = [
     "name": "Ms. Monika Yadav",
     "role": "Associate Professor",
     "qualification": "M.Sc Nursing/ Community Health Nursing",
-    "specialisation": "Sports",
+    "specialisation": "",
     "experience": "11.6 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "2" },
@@ -164,7 +164,7 @@ const facultyProfiles = [
     "name": "Mr. Rupram Sharma",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/MSN",
-    "specialisation": "Neurology",
+    "specialisation": "",
     "experience": "12 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "3" },
@@ -184,7 +184,7 @@ const facultyProfiles = [
     "name": "Mr. Ankit Kumar Jain",
     "role": "Professor",
     "qualification": "M.Sc. Nursing/ MSN",
-    "specialisation": "Pediatrics",
+    "specialisation": "",
     "experience": "13.1 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "" },
@@ -204,7 +204,7 @@ const facultyProfiles = [
     "name": "Mr. Sunil Sharma",
     "role": "Assistant Professor",
     "qualification": "M.Sc Nursing/ Community Health Nursing",
-    "specialisation": "Neurology",
+    "specialisation": "",
     "experience": "9 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "4" },
@@ -224,7 +224,7 @@ const facultyProfiles = [
     "name": "Mr. Tarun Mudgal",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/MSN",
-    "specialisation": "CTS",
+    "specialisation": "",
     "experience": "8.4 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "3" },
@@ -244,7 +244,7 @@ const facultyProfiles = [
     "name": "Ms. Rinki Sharma",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/ OBG",
-    "specialisation": "Neuro",
+    "specialisation": "",
     "experience": "7.0 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "1" },
@@ -264,7 +264,7 @@ const facultyProfiles = [
     "name": "Ms. Anjali Sharma",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/ OBG",
-    "specialisation": "Neurology",
+    "specialisation": "",
     "experience": "2 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "" },
@@ -284,7 +284,7 @@ const facultyProfiles = [
     "name": "Mr. Sandeep Kalirawqana",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/ PAED",
-    "specialisation": "Sports",
+    "specialisation": "",
     "experience": "6.5 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "" },
@@ -304,7 +304,7 @@ const facultyProfiles = [
     "name": "Mr. Aneesh",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/ MHN",
-    "specialisation": "Neuro",
+    "specialisation": "",
     "experience": "2 Year",
     "metrics": [
       { "label": "Publications (Present University)", "value": "" },
@@ -344,7 +344,7 @@ const facultyProfiles = [
     "name": "Mr. Sandeep Sharma",
     "role": "Assistant Professor",
     "qualification": "M.Sc. Nursing/ PAED",
-    "specialisation": "Sports",
+    "specialisation": "",
     "experience": "14.5",
     "metrics": [
       { "label": "Publications (Present University)", "value": "" },
