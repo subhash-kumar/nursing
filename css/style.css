@@ -864,7 +864,7 @@ footer small{font-size:9px}
 .visit-caption-kicker{display:block;margin:0;color:#ffc833;font-size:clamp(13px,.9vw,15px);font-weight:500;letter-spacing:0;text-transform:none}
 .visit-caption-kicker strong{color:inherit;font-weight:800}
 .visit-caption-kicker .visit-caption-highlight{color:#fff;font-weight:inherit}
-.industry-visit-gallery>.gallery-controls{position:absolute;bottom:18px;right:18px;margin:0;gap:8px}
+.industry-visit-gallery>.gallery-controls{position:absolute;bottom:18px;right:18px;margin:0;gap:8px;display: none;}
 .industry-visit-gallery .gallery-position{color:white}
 .industry-visit-gallery .gallery-controls button{background:#fffc}
 @media (hover:hover) and (pointer:fine) {
@@ -1163,7 +1163,7 @@ a.scholarship-next-option:focus-visible{outline:3px solid #053555;outline-offset
 #facilities .gallery-image{position:absolute!important;left:50%;top:28px!important;height:560px!important;border:0;border-radius:24px;background:#321721;box-shadow:0 14px 32px #260a1718;transform-origin:center;overflow:hidden;transition:opacity .35s;will-change:transform,width,opacity;cursor:pointer}
 #facilities .gallery-image::after{content:"";position:absolute;inset:0;z-index:3;border:3px solid var(--red);border-radius:inherit;box-shadow:inset 0 0 0 1px #ffffff70;opacity:0;pointer-events:none;transition:opacity .2s ease}
 #facilities .gallery-image:is(:hover,:focus-visible)::after{opacity:1}
-#facilities .gallery-image img{display:block;width:100%;height:100%;object-position:center center}
+#facilities .gallery-image img{display:block;width:100%;height:100%;object-position:center 0% !important;}
 #facilities .gallery-image img,#facilities .gallery-image>span{pointer-events:none;-webkit-user-drag:none}
 #facilities .gallery-image-content{position:relative;z-index:1;object-fit:cover!important}
 #facilities .gallery-image-backdrop{position:absolute;z-index:0;inset:-10%;width:120%!important;height:120%!important;object-fit:cover!important;filter:blur(24px) brightness(.62) saturate(.85);opacity:.78;pointer-events:none}
@@ -1523,7 +1523,7 @@ dialog.mentor-dialog{width:min(1360px,calc(100vw - 40px));font-family:var(--bs-b
  .law-exposure-experiences li{padding:9px;font-size:11px}
 }
 .career-profiles-title>span{display:block}
-.career-profiles-controls{display:flex;gap:clamp(14px,2vw,26px);padding-bottom:2px}
+.career-profiles-controls{display:flex;gap:clamp(14px,2vw,26px);padding-bottom:2px;display: none;}
 .career-profiles-controls button{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:#111;color:#fff;box-shadow:0 3px 12px #00000012}
 .career-profiles-controls button:hover{background:#b41027}
 .career-profiles-controls svg{width:20px;height:20px}
@@ -2409,7 +2409,7 @@ dialog.mentor-profile-dialog.is-leadership-profile{border-color:#800020;backgrou
 .law-alumni-placements .law-placement-card .placement-copy h3{grid-row:1;width:62%;min-height:0;margin:0;color:#fff;font-size:clamp(24px,7cqw,34px);font-weight:800;line-height:1.08;letter-spacing:-.04em;overflow-wrap:break-word}
 .law-alumni-placements .law-placement-card .placement-copy h3 span{font-weight:650}
 .law-alumni-placements .law-placement-card .placement-copy hr{grid-row:2;width:12cqw;margin:4cqw 0;border:0;border-top:3px solid #ffbd66;opacity:1}
-.law-alumni-placements .law-placement-card .law-placement-role{grid-row:3;width:59%;margin:0;color:#ffe1ad;font-size:clamp(20px,5.8cqw,28px);font-weight:700;line-height:1.25;letter-spacing:-.025em}
+.law-alumni-placements .law-placement-card .law-placement-role{grid-row:3;width:59%;margin:0;color:#ffe1ad;font-size:16px;font-weight:700;line-height:1.25;letter-spacing:-.025em}
 .law-alumni-placements .law-placement-card .law-placement-organisation{grid-row:7;width:51%;min-width:0;margin:0;color:#ffe1ad;font-size:clamp(13px,3.8cqw,18px);font-weight:750;line-height:1.4;letter-spacing:0;overflow-wrap:break-word}
 .law-alumni-placements .law-placement-badge{display:flex;flex:none;align-items:center;justify-content:center;width:24cqw;height:24cqw;min-height:0;margin:0;padding:1.5cqw;border:1px solid #eadfe1;border-radius:3cqw;background:#fff}
 .law-alumni-placements .law-placement-badge img{display:block;width:100%;height:100%;object-fit:contain}
@@ -2630,7 +2630,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .law-achievements-heading>p{max-width:1040px;margin:0;color:#383838;font:400 clamp(16px,1.15vw,21px)/1.65 "Plus Jakarta Sans",sans-serif}
 .law-achievements-stats{grid-area:stats;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.5vw,28px);position:relative;z-index:2}
 .law-achievements-stats article{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;min-height:clamp(190px,16.5vw,275px);padding:clamp(18px,1.4vw,27px);border:1px solid #426b90;border-radius:clamp(22px,2vw,34px);background:#fff}
-.law-achievements-stats article>strong{display:block;margin-bottom:20px;color:#ce293c;font:400 clamp(40px,4.2vw,78px)/1.05 Anton,sans-serif;letter-spacing:-.02em;white-space:nowrap}
+.law-achievements-stats article>strong{display:block;margin-bottom:20px;color:#ce293c;font:400 clamp(40px,2.2vw,78px)/1.05 Anton,sans-serif;letter-spacing:-.02em;white-space:nowrap}
 .law-achievements-stats article:nth-child(2)>strong{font-size:clamp(30px,3.8vw,68px)}
 .law-achievements-stats h3{margin:0 0 8px;color:#292929;font:700 clamp(14px,1.1vw,20px)/1.35 "Plus Jakarta Sans",sans-serif}
 .law-achievements-stats p{margin:0;color:#666;font:400 clamp(11px,.85vw,15px)/1.5 "Plus Jakarta Sans",sans-serif}
@@ -2851,7 +2851,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .law-activity-slide:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000e);pointer-events:none}
 .law-activity-slide figcaption{position:absolute;z-index:1;bottom:26px;left:26px;right:192px;margin:0;color:#ffc833;font:600 clamp(13px,.95vw,16px)/1.6 "Plus Jakarta Sans",sans-serif;text-shadow:0 2px 8px #000}
 .law-activity-slide figcaption strong{color:#fff;font-weight:800}
-.law-activity-controls{position:absolute;z-index:2;right:20px;bottom:22px;display:flex;align-items:center;gap:10px}
+.law-activity-controls{position:absolute;z-index:2;right:20px;bottom:22px;display:flex;align-items:center;gap:10px;display: none;}
 .law-activity-controls button{display:grid;place-items:center;flex:none;width:46px;height:46px;padding:0;border:0;border-radius:50%;background:#ffffffe0;color:#b41027;font:400 28px/1 Arial,sans-serif;cursor:pointer;transition:background .2s,color .2s}
 .law-activity-controls button:hover{background:#fff;color:#780c1b}
 .law-activity-controls .gallery-position{min-width:45px;text-align:center;color:#fff;font:800 13px/1 "Plus Jakarta Sans",sans-serif}
@@ -3737,12 +3737,20 @@ button[aria-label*="next" i]:disabled{
 /* hero section css */
 
 .hero{height:clamp(700px,50vw,820px);position:relative;isolation:isolate;color:white;overflow:hidden}
-.hero-backdrop{position:absolute;inset:-5px;z-index:-2;background:url("../images/nursing-banner-img.webp") center/cover;filter:blur(2.5px)}
+/* .hero-backdrop{position:absolute;inset:-5px;z-index:-2;background:url("../images/nursing-banner-img.webp") center/cover;filter:blur(2.5px)} */
+section.hero .hero-backdrop{
+  inset:0;
+  filter:none;
+  background-image:url("../images/nursing-banner-img.webp");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.48) 34%,rgba(0,0,0,.1) 68%,rgba(0,0,0,.12));z-index:-1}
 .hero-inner{height:100%;position:relative;max-width:1600px;margin:auto;width:92.5%;display:flex;align-items:center;justify-content:space-between}
 .hero-copy{width:41%;padding-bottom:8px;position:relative;z-index:2}
 .school-name{font-size:clamp(28px,2.5vw,40px);line-height:1.25;border-left:2px solid #ee0014;padding-left:7px;font-weight:700;margin-bottom:12px}
-.hero h1{font:600 clamp(48px,12.5vw,50px)/1.15 Anton,sans-serif;margin:0 0 10px;background:linear-gradient(105deg,#ffcf30,#ff182b);color:transparent;background-clip:text;-webkit-background-clip:text;width:max-content;line-height: 1.2 !important;}
+.hero h1{font-size:85px;margin:0 0 10px;background:linear-gradient(105deg,#ffcf30,#ff182b);color:transparent;background-clip:text;-webkit-background-clip:text;width:max-content;line-height: 1.2 !important;}
 .admissions-kicker{display:none;max-width:470px;margin:0 0 12px;color:#fff;font-size:clamp(12px,1vw,15px);font-weight:700;line-height:1.45;letter-spacing:.02em;text-shadow:0 1px 3px #0008}
 .admissions-ribbon{background:#d6000b;color:white;min-height:44px;padding:10px 20px;font-weight:800;font-size:clamp(14px,1.2vw,18px);line-height:1.4;letter-spacing:0;display:inline-flex;gap:18px;align-items:center}
 .admissions-ribbon:hover{background:#bd0006}
@@ -3984,6 +3992,38 @@ button[aria-label*="next" i]:disabled{
  .hero .application-panel .row{--bs-gutter-x:12px;--bs-gutter-y:11px}
  .hero .application-panel .form-control,.hero .application-panel .form-select{min-height:36px;padding-block:10px}
  .hero .consent{margin:21px 10px 18px}
+ .hero .hero-copy{position:static}
+  .hero .hero-inner{position:relative}
+  .hero .hero-benefits{
+    position:absolute;
+    left:0;
+    bottom:28px;
+    margin:0;
+    width:620px;
+    max-width:48%;
+    z-index:4;
+  }
+  section.hero .hero-inner .hero-copy{
+    align-self:flex-start;
+    padding-top:clamp(32px,4vw,64px);
+  }
+
+#facilities .life-image-gallery.is-expanded~.nims-campus-explore{
+    position:absolute;z-index:50;left:0;right:0;
+    top:28px;height:560px;            /* = the opened card: top 28px, height 560px (520px on tablet) */
+    margin:0;gap:0;padding:0 46px;
+    justify-content:space-between;align-items:center;
+    pointer-events:none;              /* the photo underneath stays clickable / draggable */
+  }
+  /* photo shown in its full height -> follow the card automatically */
+  #facilities .life-image-gallery.is-expanded:has(.gallery-image--full-photo.is-open)~.nims-campus-explore{height:auto;bottom:62px}
+  #facilities .life-image-gallery.is-expanded~.nims-campus-explore button{
+    pointer-events:auto;                 /* size / round shape come from your existing button[aria-label*="next"] rule */
+    background:#ffffffeb;box-shadow:0 8px 22px #260a1745;
+    opacity:0;animation:campus-arrow-in .45s .3s ease forwards;
+  }
+  #facilities .life-image-gallery.is-expanded~.nims-campus-explore button:hover{background:#760018;color:#fff}
+
 }
 @media(min-width:768px) and (max-width:1199px){
  .hero{height:680px;min-height:680px}
@@ -3991,4 +4031,10 @@ button[aria-label*="next" i]:disabled{
  .hero-copy{width:41%;transform:none}
  .hero .hero-rotator,.hero .hero-student{left:34%;height:77%}
  .hero .application-panel{width:36%;padding:20px 14px 24px}
+  #facilities .life-image-gallery.is-expanded~.nims-campus-explore{height:520px;padding-inline:40px}
+  #facilities .life-image-gallery.is-expanded:has(.gallery-image--full-photo.is-open)~.nims-campus-explore{height:auto}
+}
+@keyframes campus-arrow-in{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  #facilities .life-image-gallery.is-expanded~.nims-campus-explore button{animation:none;opacity:1}
 }
