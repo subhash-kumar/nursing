@@ -1108,6 +1108,7 @@ const facultyProfiles = [
   }
 
   // Campus Photo Gallery.
+    // Campus Photo Gallery.
   function initCampusGallery() {
     const gallery = document.getElementById('mbaFacilitiesGallery');
     if (!gallery) return;
@@ -1172,19 +1173,33 @@ const facultyProfiles = [
       card.style.pointerEvents = visible ? 'auto' : 'none';
       card.classList.toggle('is-open', expanded && selected);
     };
+
+    // Expanded card ki height = image ke asli ratio se (screen se bada nahi hoga).
+    const photoHeight = (card, bannerWidth) => {
+      const framed = framedPhotos.get(card);
+      const img = card.querySelector('.gallery-image-content');
+      let nw, nh;
+      if (framed) {
+        nw = framed.wideWidth;
+        nh = framed.wideHeight;
+      } else {
+        nw = img.naturalWidth || Number(img.getAttribute('width'));
+        nh = img.naturalHeight || Number(img.getAttribute('height'));
+      }
+      const ratio = nw && nh ? nh / nw : 9 / 16;
+      return Math.round(Math.max(360, Math.min(bannerWidth * ratio, window.innerHeight * 0.82)));
+    };
+
     const render = () => {
       if (galleryWidth < 768) return;
       const width = galleryWidth;
-      const bannerWidth = width - (width < 768 ? 32 : 64);
+      const bannerWidth = width - 64;
       const previewWidth = Math.max(cardWidth, width * .5);
       current = expanded ? current : wrap(Math.round(phase));
-      const framedPhoto = expanded ? framedPhotos.get(cards[current]) : null;
       const widePhoto = width >= 768;
-      gallery.classList.toggle('has-full-photo', !!framedPhoto);
-      if (framedPhoto) {
-        const ratio = widePhoto ? framedPhoto.wideHeight / framedPhoto.wideWidth : framedPhoto.portraitHeight / framedPhoto.portraitWidth;
-        gallery.style.setProperty('--campus-photo-height', `${bannerWidth * ratio}px`);
-      } else gallery.style.removeProperty('--campus-photo-height');
+      gallery.classList.remove('has-full-photo');
+      if (expanded) gallery.style.setProperty('--campus-photo-height', `${photoHeight(cards[current], bannerWidth)}px`);
+      else gallery.style.removeProperty('--campus-photo-height');
       // Hover preview: the hovered card grows in place and its neighbours slide outward by the same amount, so nothing is covered.
       const previewIndex = !expanded && hoveredIndex !== null ? hoveredIndex : null;
       let previewOffset = 0, previewDisplacement = 0;
@@ -1287,6 +1302,10 @@ const facultyProfiles = [
       close.focus({
         preventScroll: true
       });
+      window.requestAnimationFrame(() => gallery.scrollIntoView({
+        block: 'center',
+        behavior: motion.matches ? 'auto' : 'smooth'
+      }));
     };
     const collapse = () => {
       if (!expanded) return;
@@ -1331,6 +1350,11 @@ const facultyProfiles = [
       render();
       start();
     };
+    // Image load hone par expanded height dobara calculate ho.
+    cards.forEach(card => {
+      const img = card.querySelector('.gallery-image-content');
+      if (img) img.addEventListener('load', () => { if (expanded) render(); });
+    });
     cards.forEach(card => {
       card.setAttribute('role', 'button');
       card.setAttribute('aria-label', `Expand ${card.querySelector('img').alt}`);
@@ -1366,8 +1390,6 @@ const facultyProfiles = [
       event.preventDefault();
       step(event.key === 'ArrowRight' ? 1 : -1);
     });
-    // Use direct mouse events on desktop. Listening for movement on `window`
-    // keeps the drag alive even when the pointer leaves the visible card.
     gallery.addEventListener('mousedown', event => {
       if (event.button !== 0 || event.target.closest('button')) return;
       pointer = {
@@ -1431,8 +1453,6 @@ const facultyProfiles = [
       hovered = false;
       start();
     });
-    // Match the video rows: horizontal wheels / trackpads and Shift + wheel
-    // move the gallery, while a normal vertical wheel still scrolls the page.
     gallery.addEventListener('wheel', event => {
       if (event.ctrlKey || expanded || pointer || touchPointer) return;
       if (!event.shiftKey && Math.abs(event.deltaY) > Math.abs(event.deltaX)) return;

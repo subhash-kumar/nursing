@@ -1180,7 +1180,36 @@ a.scholarship-next-option:focus-visible{outline:3px solid #053555;outline-offset
 #facilities .gallery-image--placeholder .gallery-image-content,#facilities .gallery-image--placeholder.is-open .gallery-image-content{object-fit:contain!important}
 #facilities .gallery-image--mall .gallery-image-content,#facilities .gallery-image--mall.is-open .gallery-image-content{object-position:center top}
 #facilities .gallery-image.is-open>span{font:700 clamp(24px,2.8vw,40px)/1.2 var(--font-display);padding:100px 34px 30px}
-#facilities .life-image-gallery.is-expanded.has-full-photo{height:calc(var(--campus-photo-height) + 90px)!important}
+/* #facilities .life-image-gallery.is-expanded.has-full-photo{height:calc(var(--campus-photo-height) + 90px)!important} */
+#facilities .life-image-gallery.is-expanded,
+#facilities .life-image-gallery.is-expanded.has-full-photo{
+  height:588px !important;            /* 28px top + 560px card */
+}
+#facilities .life-image-gallery.is-expanded .gallery-image.is-open,
+#facilities .gallery-image--full-photo.is-open{
+  height:560px !important;            /* fixed height, aspect ratio se nahi badlegi */
+}
+
+/* 2. Image poori card ko cover kare (letterbox/white gap nahi) */
+#facilities .gallery-image.is-open .gallery-image-content,
+#facilities .gallery-image--full-photo.is-open .gallery-image-content{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
+/* 3. Expanded hone par curved white edges (:before/:after) hatao */
+#facilities .life-image-gallery.is-expanded:before,
+#facilities .life-image-gallery.is-expanded:after{
+  display:none !important;
+}
+
+/* 4. Section ke neeche extra space na bache */
+#facilities.life{padding-bottom:12px}
+#facilities .life-curved-slider-wrap{overflow:hidden}
+
+
+
+
 #facilities .gallery-image--full-photo.is-open{height:var(--campus-photo-height)!important}
 #facilities .gallery-image--full-photo.is-open .gallery-image-content{object-fit:contain!important;object-position:center}
 #facilities .gallery-image--original-photo .gallery-image-backdrop{display:none}
@@ -4008,23 +4037,62 @@ section.hero .hero-backdrop{
     padding-top:clamp(32px,4vw,64px);
   }
 
-#facilities .life-image-gallery.is-expanded~.nims-campus-explore{
-    position:absolute;z-index:50;left:0;right:0;
-    top:28px;height:560px;            /* = the opened card: top 28px, height 560px (520px on tablet) */
-    margin:0;gap:0;padding:0 46px;
-    justify-content:space-between;align-items:center;
-    pointer-events:none;              /* the photo underneath stays clickable / draggable */
+#facilities .life-curved-slider-wrap .life-image-gallery.is-expanded{
+    height:calc(var(--campus-photo-height, 560px) + 56px) !important;
+    transition:height .55s cubic-bezier(.22,.75,.2,1);
   }
-  /* photo shown in its full height -> follow the card automatically */
-  #facilities .life-image-gallery.is-expanded:has(.gallery-image--full-photo.is-open)~.nims-campus-explore{height:auto;bottom:62px}
-  #facilities .life-image-gallery.is-expanded~.nims-campus-explore button{
-    pointer-events:auto;                 /* size / round shape come from your existing button[aria-label*="next"] rule */
-    background:#ffffffeb;box-shadow:0 8px 22px #260a1745;
-    opacity:0;animation:campus-arrow-in .45s .3s ease forwards;
+  /* card ki height = image ki height */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open{
+    height:var(--campus-photo-height, 560px) !important;
+    top:28px !important;
+    background:#1d0c13;
   }
-  #facilities .life-image-gallery.is-expanded~.nims-campus-explore button:hover{background:#760018;color:#fff}
+  /* image poori dikhe, crop nahi */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open .gallery-image-content{
+    object-fit:contain !important;
+    object-position:center center !important;
+  }
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open .gallery-image-backdrop{
+    display:block !important;
+  }
+  /* caption hamesha image ke upar */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded .gallery-image.is-open > span{
+    z-index:5 !important;
+    padding:70px 34px 26px !important;
+    font-size:clamp(20px,2.2vw,32px) !important;
+  }
+  /* curved white edges hatao */
+  #facilities .life-image-gallery.is-expanded:before,
+  #facilities .life-image-gallery.is-expanded:after{display:none !important}
+
+  /* arrows image ke left/right beech me */
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded ~ .nims-campus-explore{
+    position:absolute !important;
+    z-index:50;
+    left:0; right:0;
+    top:28px !important;
+    height:var(--campus-photo-height, 560px) !important;
+    margin:0 !important;
+    padding:0 46px !important;
+    gap:0 !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    pointer-events:none;
+  }
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded ~ .nims-campus-explore button{
+    pointer-events:auto;
+    opacity:1 !important;
+    background:#ffffffeb !important;
+    box-shadow:0 8px 22px #260a1745 !important;
+  }
+  #facilities .life-curved-slider-wrap .life-image-gallery.is-expanded ~ .nims-campus-explore button:hover{
+    background:#760018 !important;
+    color:#fff !important;
+  }
 
 }
+#facilities.life{padding-bottom:12px}
+#facilities .life-curved-slider-wrap{position:relative;overflow:hidden}
 @media(min-width:768px) and (max-width:1199px){
  .hero{height:680px;min-height:680px}
  .hero-inner{width:94%;gap:18px}
@@ -4033,6 +4101,11 @@ section.hero .hero-backdrop{
  .hero .application-panel{width:36%;padding:20px 14px 24px}
   #facilities .life-image-gallery.is-expanded~.nims-campus-explore{height:520px;padding-inline:40px}
   #facilities .life-image-gallery.is-expanded:has(.gallery-image--full-photo.is-open)~.nims-campus-explore{height:auto}
+
+   #facilities .life-image-gallery.is-expanded,
+  #facilities .life-image-gallery.is-expanded.has-full-photo{height:548px !important}
+  #facilities .life-image-gallery.is-expanded .gallery-image.is-open{height:520px !important}
+  #facilities .life-image-gallery.is-expanded ~ .nims-campus-explore{height:520px;padding-inline:40px}
 }
 @keyframes campus-arrow-in{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){
