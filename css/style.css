@@ -2658,7 +2658,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .law-achievements-heading h2>span{background:var(--heading-gradient);background-clip:text;-webkit-background-clip:text;color:transparent}
 .law-achievements-heading>p{max-width:1040px;margin:0;color:#383838;font:400 clamp(16px,1.15vw,21px)/1.65 "Plus Jakarta Sans",sans-serif}
 .law-achievements-stats{grid-area:stats;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.5vw,28px);position:relative;z-index:2}
-.law-achievements-stats article{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;min-height:clamp(190px,16.5vw,275px);padding:clamp(18px,1.4vw,27px);border:1px solid #426b90;border-radius:clamp(22px,2vw,34px);background:#fff}
+.law-achievements-stats article{display:flex;flex-direction:column;justify-content:start;align-items:flex-start;min-width:0;min-height:clamp(190px,16.5vw,275px);padding:clamp(18px,1.4vw,27px);border:1px solid #426b90;border-radius:clamp(22px,2vw,34px);background:#fff}
 .law-achievements-stats article>strong{display:block;margin-bottom:20px;color:#ce293c;font:400 clamp(40px,2.2vw,78px)/1.05 Anton,sans-serif;letter-spacing:-.02em;white-space:nowrap}
 .law-achievements-stats article:nth-child(2)>strong{font-size:clamp(30px,3.8vw,68px)}
 .law-achievements-stats h3{margin:0 0 8px;color:#292929;font:700 clamp(14px,1.1vw,20px)/1.35 "Plus Jakarta Sans",sans-serif}
@@ -2753,7 +2753,7 @@ dialog.law-event-dialog{width:min(1140px,calc(100vw - 40px));max-width:none;max-
 .law-achievement-card-heading h4{margin:0 0 24px;color:#fff;font:400 clamp(30px,2.65vw,46px)/1.07 Anton,sans-serif;letter-spacing:-.025em;overflow-wrap:normal}
 .law-achievement-card-heading p{margin:0 0 12px;color:#ffe477;font-size:clamp(12px,1vw,17px);line-height:1.4;font-weight:750}
 .law-achievement-card-heading>span{display:block;color:#fff2b5;font-size:clamp(11px,.82vw,14px);line-height:1.4;font-weight:650}
-.law-achievement-card .law-achievement-card-copy{position:absolute;z-index:4;left:6%;right:10%;bottom:40px;margin:0;padding:13px 15px;border-radius:12px;background:linear-gradient(100deg,#a6001dcc,#615c73b5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.law-achievement-card .law-achievement-card-copy{position:absolute;z-index:4;left:6%;right:10%;bottom:0px;margin:0;padding:13px 15px;border-radius:12px;background:linear-gradient(100deg,#a6001dcc,#615c73b5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .law-achievement-card .law-achievement-award{margin:0 0 12px;color:#fff;font:400 clamp(27px,2.05vw,36px)/1.13 Anton,sans-serif}
 .law-achievement-card .law-achievement-card-copy>p:last-child{margin:0;color:#fff;font:400 clamp(14px,1.05vw,18px)/1.55 "Plus Jakarta Sans",sans-serif}
 .law-achievement-card-badge{position:absolute;z-index:5;left:6%;bottom:28px;display:flex;align-items:center;min-height:66px;max-width:82%;padding:12px 18px;border-radius:18px;background:#fff;color:#990019;font:750 clamp(13px,1.05vw,18px)/1.3 "Plus Jakarta Sans",sans-serif}
