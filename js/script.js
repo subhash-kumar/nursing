@@ -159,26 +159,26 @@ const facultyProfiles = [
     "sourceRow": 18,
     "generated": false
   },
-  // {
-  //   "id": "ashu-sharma",
-  //   "name": "Mr. Rupram Sharma",
-  //   "role": "Assistant Professor",
-  //   "qualification": "M.Sc. Nursing",
-  //   "specialisation": "Medical Surgical Nursing",
-  //   "experience": "12 Year",
-  //   "metrics": [
-  //     { "label": "Publications (Present University)", "value": "3" },
-  //     { "label": "Overall Publications", "value": "3" }
-  //   ],
-  //   "achievement": "1",
-  //   "research": "1",
-  //   "joined": "24.12.2021",
-  //   "appointment": "Permanent",
-  //   "department": "Nims Nursing College",
-  //   "portrait": "images/rupram-sharma-nur-facu.webp",
-  //   "sourceRow": 22,
-  //   "generated": false
-  // },
+  {
+    "id": "ashu-sharma",
+    "name": "Mr. Rupram Sharma",
+    "role": "Assistant Professor",
+    "qualification": "M.Sc. Nursing",
+    "specialisation": "Medical Surgical Nursing",
+    "experience": "12 Year",
+    "metrics": [
+      { "label": "Publications (Present University)", "value": "3" },
+      { "label": "Overall Publications", "value": "3" }
+    ],
+    "achievement": "1",
+    "research": "1",
+    "joined": "24.12.2021",
+    "appointment": "Permanent",
+    "department": "Nims Nursing College",
+    "portrait": "images/rupram-sharma-nur-facu.webp",
+    "sourceRow": 22,
+    "generated": false
+  },
   {
     "id": "balaram-yadav",
     "name": "Mr. Ankit Kumar Jain",
