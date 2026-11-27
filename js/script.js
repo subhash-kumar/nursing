@@ -159,26 +159,26 @@ const facultyProfiles = [
     "sourceRow": 18,
     "generated": false
   },
-  {
-    "id": "ashu-sharma",
-    "name": "Mr. Rupram Sharma",
-    "role": "Assistant Professor",
-    "qualification": "M.Sc. Nursing",
-    "specialisation": "Medical Surgical Nursing",
-    "experience": "12 Year",
-    "metrics": [
-      { "label": "Publications (Present University)", "value": "3" },
-      { "label": "Overall Publications", "value": "3" }
-    ],
-    "achievement": "1",
-    "research": "1",
-    "joined": "24.12.2021",
-    "appointment": "Permanent",
-    "department": "Nims Nursing College",
-    "portrait": "images/rupram-sharma-nur-facu.webp",
-    "sourceRow": 22,
-    "generated": false
-  },
+  // {
+  //   "id": "ashu-sharma",
+  //   "name": "Mr. Rupram Sharma",
+  //   "role": "Assistant Professor",
+  //   "qualification": "M.Sc. Nursing",
+  //   "specialisation": "Medical Surgical Nursing",
+  //   "experience": "12 Year",
+  //   "metrics": [
+  //     { "label": "Publications (Present University)", "value": "3" },
+  //     { "label": "Overall Publications", "value": "3" }
+  //   ],
+  //   "achievement": "1",
+  //   "research": "1",
+  //   "joined": "24.12.2021",
+  //   "appointment": "Permanent",
+  //   "department": "Nims Nursing College",
+  //   "portrait": "images/rupram-sharma-nur-facu.webp",
+  //   "sourceRow": 22,
+  //   "generated": false
+  // },
   {
     "id": "balaram-yadav",
     "name": "Mr. Ankit Kumar Jain",
@@ -299,26 +299,26 @@ const facultyProfiles = [
     "sourceRow": 19,
     "generated": true
   },
-  {
-    "id": "jugnu",
-    "name": "Mr. Aneesh",
-    "role": "Assistant Professor",
-    "qualification": "M.Sc. Nursing",
-    "specialisation": "Mantel Health Nursing",
-    "experience": "2 Year",
-    "metrics": [
-      { "label": "Publications (Present University)", "value": "" },
-      { "label": "Overall Publications", "value": "" }
-    ],
-    "achievement": "2",
-    "research": "2",
-    "joined": "10-06-2026",
-    "appointment": "Permanent",
-    "department": "Nims Nursing College",
-    "portrait": "images/sandeep-kalrawana-nur-facu.webp",
-    "sourceRow": 24,
-    "generated": true
-  },
+  // {
+  //   "id": "jugnu",
+  //   "name": "Mr. Aneesh",
+  //   "role": "Assistant Professor",
+  //   "qualification": "M.Sc. Nursing",
+  //   "specialisation": "Mantel Health Nursing",
+  //   "experience": "2 Year",
+  //   "metrics": [
+  //     { "label": "Publications (Present University)", "value": "" },
+  //     { "label": "Overall Publications", "value": "" }
+  //   ],
+  //   "achievement": "2",
+  //   "research": "2",
+  //   "joined": "10-06-2026",
+  //   "appointment": "Permanent",
+  //   "department": "Nims Nursing College",
+  //   "portrait": "images/sandeep-kalrawana-nur-facu.webp",
+  //   "sourceRow": 24,
+  //   "generated": true
+  // },
   // {
   //   "id": "mayuri",
   //   "name": "Ms. Monika Ladawat",
@@ -339,26 +339,26 @@ const facultyProfiles = [
   //   "sourceRow": 16,
   //   "generated": true
   // },
-  {
-    "id": "prachi-kumari",
-    "name": "Mr. Sandeep Sharma",
-    "role": "Assistant Professor",
-    "qualification": "M.Sc. Nursing/ PAED",
-    "specialisation": "Child Health Nursing",
-    "experience": "14.5",
-    "metrics": [
-      { "label": "Publications (Present University)", "value": "" },
-      { "label": "Overall Publications", "value": "" }
-    ],
-    "achievement": "5",
-    "research": "5",
-    "joined": "26/10/2026",
-    "appointment": "Permanent",
-    "department": "Nims Nursing College",
-    "portrait": "images/sandeep-sharma-nur-facu.webp",
-    "sourceRow": 14,
-    "generated": true
-  }
+  // {
+  //   "id": "prachi-kumari",
+  //   "name": "Mr. Sandeep Sharma",
+  //   "role": "Assistant Professor",
+  //   "qualification": "M.Sc. Nursing/ PAED",
+  //   "specialisation": "Child Health Nursing",
+  //   "experience": "14.5",
+  //   "metrics": [
+  //     { "label": "Publications (Present University)", "value": "" },
+  //     { "label": "Overall Publications", "value": "" }
+  //   ],
+  //   "achievement": "5",
+  //   "research": "5",
+  //   "joined": "26/10/2026",
+  //   "appointment": "Permanent",
+  //   "department": "Nims Nursing College",
+  //   "portrait": "images/sandeep-sharma-nur-facu.webp",
+  //   "sourceRow": 14,
+  //   "generated": true
+  // }
 ];
 
 
