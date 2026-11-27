@@ -339,26 +339,26 @@ const facultyProfiles = [
   //   "sourceRow": 16,
   //   "generated": true
   // },
-  // {
-  //   "id": "prachi-kumari",
-  //   "name": "Mr. Sandeep Sharma",
-  //   "role": "Assistant Professor",
-  //   "qualification": "M.Sc. Nursing/ PAED",
-  //   "specialisation": "Child Health Nursing",
-  //   "experience": "14.5",
-  //   "metrics": [
-  //     { "label": "Publications (Present University)", "value": "" },
-  //     { "label": "Overall Publications", "value": "" }
-  //   ],
-  //   "achievement": "5",
-  //   "research": "5",
-  //   "joined": "26/10/2026",
-  //   "appointment": "Permanent",
-  //   "department": "Nims Nursing College",
-  //   "portrait": "images/sandeep-sharma-nur-facu.webp",
-  //   "sourceRow": 14,
-  //   "generated": true
-  // }
+  {
+    "id": "prachi-kumari",
+    "name": "Mr. Sandeep Sharma",
+    "role": "Assistant Professor",
+    "qualification": "M.Sc. Nursing/ PAED",
+    "specialisation": "Child Health Nursing",
+    "experience": "14.5",
+    "metrics": [
+      { "label": "Publications (Present University)", "value": "" },
+      { "label": "Overall Publications", "value": "" }
+    ],
+    "achievement": "5",
+    "research": "5",
+    "joined": "26/10/2026",
+    "appointment": "Permanent",
+    "department": "Nims Nursing College",
+    "portrait": "images/sandeep-sharma-nur-facu.webp",
+    "sourceRow": 14,
+    "generated": true
+  }
 ];
 
 
